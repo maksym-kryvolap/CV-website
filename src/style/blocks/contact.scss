@@ -1,0 +1,165 @@
+@use "../utils/mixins" as *;
+
+.contact {
+  &__title {
+    color: var(--color-text--role);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 1s ease-in-out;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__form {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.7s ease-in-out;
+    width: 100%;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @include screen-md {
+      width: 60%;
+    }
+    @include screen-lg {
+      width: 40%;
+    }
+    @include screen-xl {
+      width: 35%;
+    }
+    @include screen-xxl {
+      width: 30%;
+    }
+
+    &-field {
+      box-shadow: none !important;
+      outline: none !important;
+
+      height: 40px;
+      background: var(--input-bg);
+      border: 1px solid rgb(150, 148, 148);
+      overflow: hidden;
+      box-sizing: border-box;
+      color: var(--color-text);
+      font-size: 12px;
+      padding-left: 14px;
+
+      &--invalid {
+        border: 1px solid #ec790d !important;
+      }
+
+      &--textarea {
+        resize: none;
+        height: 100px;
+        border-radius: 15px;
+      }
+    }
+
+    &-button {
+      border: 2px solid var(--color-text--role);
+      color: var(--color-text--role);
+      background-color: transparent;
+      backdrop-filter: blur(8px);
+      height: 40px;
+      width: 150px;
+
+      &:hover {
+        background-color: var(--color-text--role);
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      &-loader {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  &__info {
+    opacity: 0;
+    transform: scale(0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    width: 100%;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @include screen-md {
+      width: max-content;
+    }
+    @include screen-lg {
+      width: max-content;
+    }
+
+    &-location {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    &-socials {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    &-icon {
+      display: inline-block;
+      transition: all 0.3s ease;
+
+      @include screen-lg {
+        &:hover .contact__info-icon--svg {
+          transform: scale(1.1);
+          color: var(--color-text--role);
+        }
+      }
+
+      &--svg {
+        color: #5c5656;
+        background-color: transparent;
+        transition: all 0.2s ease;
+      }
+    }
+
+    &-prefer {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    &-btn {
+      border: 2px solid var(--color-text--role);
+      color: var(--color-text--role);
+      background-color: transparent;
+      width: max-content;
+      opacity: 0;
+      transform: translateY(-20px);
+
+      @include screen-md {
+        &:hover {
+          background-color: var(--color-text--role);
+          color: #fff;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+input:-webkit-autofill {
+  box-shadow: none !important;
+  -webkit-text-fill-color: var(--color-text) !important;
+  background: var(--input-bg);
+  transition: background-color 5000s ease-in-out 0s;
+}

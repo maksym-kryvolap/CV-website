@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "technologies": "Technologie",
+    "about": "O mnie",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "hi": "Cześć. Jestem",
+    "frontDeveloper": "Frontend Developerem",
+    "webDeveloper": "Web developerem",
+    "name": "Maksym Kryvolap",
+    "info": "Pasjonat i skrupulatny Frontend Developer z silnym naciskiem na tworzenie intuicyjnych i responsywnych aplikacji webowych. Doświadczony w nowoczesnych technologiach webowych, takich jak React, Next, HTML, CSS i inne. Dążę do budowania płynnych doświadczeń użytkownika i skalowalnych rozwiązań, które pomagają firmom rozwijać się online.",
+    "download": "Pobierz CV",
+    "contact": "Kontakt"
+  },
+  "technologies": {
+    "title": "Technologie"
+  },
+  "about": {
+    "title": "O mnie",
+    "info": {
+      "1": "Cześć, jestem Front-End Developerem z 2-letnim doświadczeniem w tworzeniu responsywnych, przyjaznych dla użytkownika aplikacji webowych. Specjalizuję się w technologiach takich jak HTML, CSS, SASS, React, Next.js i JavaScript, a także biegle posługuję się TypeScriptem dla bardziej solidnego i skalowalnego kodu.",
+      "2": "Mam praktyczne doświadczenie z Reduxem w zarządzaniu stanem aplikacji oraz integracji z REST API. Efektywnie współpracuję przy użyciu narzędzi takich jak GitHub, Trello i Jira.",
+      "3": "Ściśle współpracuję z projektantami przy użyciu Figma, aby wdrażać responsywne, wysokiej jakości projekty i zapewniać płynne doświadczenia użytkownika. Wdrażam również aplikacje przy użyciu nowoczesnych platform, zapewniając szybkie i niezawodne działanie w środowisku produkcyjnym.",
+      "4": "Zawsze chętny do nauki i podejmowania nowych wyzwań, dążę do tworzenia doskonałych doświadczeń cyfrowych. Zbudujmy coś niesamowitego razem!"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "overview": "Przegląd projektu",
+    "technologies": "Technologie",
+    "note": "Uwaga:",
+    "cornerswap": {
+      "description": "CornerSwap to wielostronicowa aplikacja webowa zaprojektowana do bezproblemowego handlu i monitorowania kryptowalut. Oferuje uwierzytelnianie użytkownika z bezpiecznym procesem rejestracji i logowania, zapewniając dostęp do spersonalizowanego panelu. Użytkownicy mogą kupować i sprzedawać różne kryptowaluty, śledzić dane rynkowe w czasie rzeczywistym za pomocą zintegrowanych widżetów oraz efektywnie zarządzać swoimi portfelami. Platforma kładzie nacisk na doświadczenie użytkownika dzięki intuicyjnej nawigacji i responsywnemu designowi, zapewniając dostępność na różnych urządzeniach.",
+      "note": "Projekt jest dostępny online. Jednak kod źródłowy jest własnością prywatną i nie jest publicznie dostępny."
+    },
+    "wilo": {
+      "description": "Ten projekt prezentuje nowoczesną stronę internetową ze stylową stroną główną i bezpiecznym panelem użytkownika. Strona prezentuje starannie dobraną listę luksusowych zegarków, z szczegółowymi opisami i wysokiej jakości zdjęciami. Zarejestrowani użytkownicy mają dostęp do swojego osobistego panelu, gdzie mogą kupować bilety na ekskluzywne losowania, oferujące szansę na wygranie tych premium czasomierzy. Platforma została zaprojektowana z naciskiem na doświadczenie użytkownika, łącząc elegancki design z płynną funkcjonalnością, tworząc angażujące i godne zaufania środowisko dla entuzjastów i kolekcjonerów zegarków.",
+      "note": "To prywatny projekt i jest obecnie dostępny tylko do oglądania lokalnie w moim środowisku deweloperskim (localhost)."
+    },
+    "fistSwitch": {
+      "description": "Projekt FistSwitch to jednostronicowa aplikacja internetowa zaprojektowana w celu ułatwienia zakupu tokenów kryptowalutowych bezpośrednio przez interfejs strony internetowej. Obsługuje połączenia portfeli za pomocą MetaMask i WalletConnect, umożliwiając użytkownikom bezpieczne i wygodne przeprowadzanie transakcji.",
+      "note": "To prywatny projekt i jest obecnie dostępny tylko do oglądania lokalnie w moim środowisku deweloperskim (localhost)."
+    },
+    "fym": {
+      "description": "FYM to dynamiczna aplikacja webowa, która pozwala użytkownikom wyszukiwać filmy po tytule, dodawać je do osobistej listy ulubionych oraz eksplorować szczegółowe informacje o każdym filmie. Platforma oferuje różne opcje sortowania, aby poprawić doświadczenie użytkownika i usprawnić odkrywanie filmów."
+    },
+    "air": {
+      "description": "Ten projekt koncentruje się na zwiększaniu wartości marki poprzez strategiczne działania brandingowe, efektywną komunikację i strategie zorientowane na wzrost."
+    },
+    "bose": {
+      "description": "Strona internetowa marki Bose zazwyczaj prezentuje obszerny katalog wysokiej jakości produktów audio. Obejmuje to różne kategorie, takie jak słuchawki, głośniki, soundbary i inne urządzenia audio."
+    },
+    "museum": {
+      "description": "Strona internetowa Muzeum Narodowego prezentuje unikalną kolekcję dzieł sztuki, wystaw i wydarzeń. Nowoczesny design, intuicyjna nawigacja i responsywny układ zapewniają wygodne przeglądanie na każdym urządzeniu."
+    },
+    "todoList": {
+      "description": "ToDo List to prosty i wygodny aplikacja do zarządzania codziennymi zadaniami. Umożliwia dodawanie, edytowanie, oznaczanie jako wykonane i usuwanie zadań, wspierając organizację i produktywność."
+    },
+    "game2048": {
+      "description": "2048 to klasyczna gra logiczna, w której gracz łączy identyczne kafelki, aby osiągnąć liczbę 2048. Prosta w obsłudze, wciągająca i rozwijająca logiczne myślenie."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "E-mail",
+    "titleForm": "Tytuł",
+    "message": "Twoja wiadomość",
+    "send": "Wyślij",
+    "done": "Gotowe",
+    "error": "Coś poszło nie tak. Proszę spróbuj ponownie.",
+    "location": "Warszawa, Polska",
+    "prefer": "Wolisz użyć swojej aplikacji e-mail?",
+    "emailMe": "Napisz do mnie"
+  }
+}

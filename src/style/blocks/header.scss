@@ -1,0 +1,165 @@
+@use "../utils/mixins" as mixins;
+
+$menu-height: 58px;
+
+@include mixins.screen-xl {
+  $menu-height: 70px;
+}
+
+.header {
+  min-height: 100vh;
+  padding: 70px 0 !important;
+
+  @include mixins.screen-md {
+    padding: 100px 0 !important;
+  }
+
+  &__left {
+    width: 250px;
+    height: 250px;
+    background-image: url("/src/assets/cvPhoto.png");
+    background-size: 160%;
+    background-position: center -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-size 0.3s ease;
+    border: 6px solid var(--border-photo);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px #817e7e;
+    transform: translateX(-30px);
+    opacity: 0;
+
+    @include mixins.screen-md {
+      width: 250px;
+      height: 250px;
+    }
+    @include mixins.screen-lg {
+      &:hover {
+        background-size: 180%;
+      }
+    }
+    @include mixins.screen-xl {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  &__right {
+    &-title {
+      opacity: 0;
+      transform: translateY(-30px);
+
+      &--role {
+        color: var(--color-text--role);
+      }
+    }
+
+    &-name {
+      color: var(--color-text--role);
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    &-text {
+      font-size: 14px;
+      opacity: 0;
+      transform: translateY(-30px);
+
+      @include mixins.screen-xl {
+        font-size: 16px;
+      }
+    }
+
+    &-btn {
+      border: 2px solid var(--color-text--role);
+      color: var(--color-text--role);
+      background-color: transparent;
+      width: max-content;
+
+      @include mixins.screen-md {
+        &:hover {
+          background-color: var(--color-text--role);
+          color: #fff;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    &-buttons {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    &-socials {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    &-icon {
+      display: inline-block;
+      transition: all 0.3s ease;
+
+      @include mixins.screen-lg {
+        &:hover .header__right-icon--svg {
+          transform: scale(1.1);
+          color: var(--color-text--role);
+        }
+      }
+
+      &--svg {
+        color: #5c5656;
+        background-color: transparent;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  &__animated {
+    &-arrow {
+      animation: fadeInOut 2s infinite;
+
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,26 @@
+.about {
+  min-height: 100vh;
+  
+  &__title {
+    color: var(--color-text--role);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 1s ease-in-out;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__item {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 1s ease-in-out;
+
+    &.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

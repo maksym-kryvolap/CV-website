@@ -1,0 +1,23 @@
+.layout {
+  color: var(--color-text);
+
+  &__bg {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--layout-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+
+  &__btn {
+    height: 36px;
+    width: 36px;
+    right: 0;
+    z-index: 999;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+}

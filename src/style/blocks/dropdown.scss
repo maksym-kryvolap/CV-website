@@ -1,0 +1,56 @@
+@use "../utils/mixins" as mixins;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &__button {
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    border: 1px solid var(--border-photo);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    color: var(--color-text);
+    background: var(--dropdown-bg);
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  &__item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @include mixins.screen-md {
+      &:hover {
+        transform: translateX(6px);
+      }
+    }
+    @include mixins.screen-lg {
+      &:hover {
+        transform: translateX(6px);
+      }
+    }
+  }
+}

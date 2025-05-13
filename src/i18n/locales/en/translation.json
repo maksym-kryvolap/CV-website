@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "technologies": "Technologies",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "header": {
+    "hi": "Hi. I'm",
+    "frontDeveloper": "Frontend developer",
+    "webDeveloper": "Web developer",
+    "name": "Maksym Kryvolap",
+    "info": "Passionate and detail-oriented Frontend Developer with a strong focus on creating intuitive and responsive web applications. Experienced in modern web technologies like React, Next, HTML, CSS, and more. I strive to build seamless user experiences and scalable solutions to help businesses grow online.",
+    "download": "Download My CV",
+    "contact": "Contact"
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "about": {
+    "title": "About Me",
+    "info": {
+      "1": "Hi, I'm a Front-End Developer with 2 years of experience building responsive, user-friendly web applications. I specialize in technologies like HTML, CSS, SASS, React, Next.js, and JavaScript, and I'm proficient in TypeScript for more robust and scalable code.",
+      "2": "I have hands-on experience with Redux for state management and integrating REST APIs. I also collaborate effectively using GitHub, Trello, and Jira.",
+      "3": "I work closely with designers using Figma to implement responsive, high-quality designs and ensure a seamless user experience. I also deploy applications using modern deployment platforms to ensure fast and reliable performance in production.",
+      "4": "Always eager to grow and take on new challenges, I aim to create great digital experiences. Let’s build something amazing together!"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "overview": "Project Overview",
+    "technologies": "Technologies",
+    "note": "Note:",
+    "cornerswap": {
+      "description": "CornerSwap is a multi-page web application designed for seamless cryptocurrency trading and monitoring. It features user authentication with secure registration and login processes, providing access to a personalized dashboard. Users can buy and sell various cryptocurrencies, track real-time market data through integrated widgets, and manage their portfolios efficiently. The platform emphasizes user experience with intuitive navigation and responsive design, ensuring accessibility across devices.",
+      "note": "The project is accessible online. However, the source code is proprietary and not publicly available."
+    },
+    "wilo": {
+      "description": "This project features a modern website with a stylish homepage and a secure user dashboard. The site showcases a curated list of high-end luxury watches, each presented with detailed descriptions and high-quality images. Registered users can access their personal dashboard to purchase tickets for exclusive raffles, offering a chance to win these premium timepieces. The platform is designed with a focus on user experience, combining elegant design with smooth functionality to create an engaging and trustworthy environment for watch enthusiasts and collectors.",
+      "note": "This is a private project and is currently only available for viewing locally on my development environment (localhost)."
+    },
+    "fistSwitch": {
+      "description": "The FistSwitch project is a single-page web application designed to facilitate the purchase of cryptocurrency tokens directly through the website interface. It supports wallet connections via MetaMask and WalletConnect, allowing users to securely and conveniently execute transactions.​",
+      "note": "This is a private project and is currently only available for viewing locally on my development environment (localhost)."
+    },
+    "fym": {
+      "description": "FYM is a dynamic web application that allows users to search for movies by title, add them to a personal favorites list, and explore detailed information about each film. The platform offers various sorting options to enhance user experience and streamline movie discovery."
+    },
+    "air": {
+      "description": "This project focuses on enhancing brand value through strategic branding, effective communication, and growth-oriented strategies."
+    },
+    "bose": {
+      "description": "The Bose brand website typically features an extensive catalog of high-quality audio products. This includes various categories like headphones, speakers, soundbars, and other audio equipment."
+    },
+    "museum": {
+      "description": "The National Museum website showcases a unique collection of artworks, exhibitions, and events. It features a modern design, intuitive navigation, and responsive layout for a seamless experience across all devices."
+    },
+    "todoList": {
+      "description": "ToDo List is a simple and user-friendly app for managing daily tasks. It lets users add, edit, mark as completed, and delete tasks, helping them stay organized and productive."
+    },
+    "game2048": {
+      "description": "2048 is a classic puzzle game where the player combines matching tiles to reach the number 2048. Easy to use, addictive, and great for developing logical thinking."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "E-mail",
+    "titleForm": "Title",
+    "message": "Your message",
+    "send": "Send",
+    "done": "Done",
+    "error": "Something went wrong. Please try adain.",
+    "location": "Warsaw, Poland",
+    "prefer": "Prefer to use your email app?",
+    "emailMe": "Email me"
+  }
+}

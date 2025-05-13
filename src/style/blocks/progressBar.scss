@@ -1,0 +1,28 @@
+@use "../utils/mixins" as mixins;
+
+.progressBar {
+  transition: all 0.3s ease;
+
+  @include mixins.screen-lg {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &-full {
+    display: flex;
+    height: 8px;
+    margin: 14px 0;
+  }
+
+  &-part {
+    transition: width 2s;
+  }
+
+  &-label {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 120px;
+    font-size: 14px;
+  }
+}

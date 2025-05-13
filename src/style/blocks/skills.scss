@@ -1,0 +1,49 @@
+@use "../utils/mixins" as mixins;
+
+.skills {
+  min-height: 100vh;
+
+  &__title {
+    color: var(--color-text--role);
+    transform: scale(0.7);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__left {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: scale(0.9);
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &-item {
+      transition: all 0.3s ease-in-out;
+
+      @include mixins.screen-lg {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__right {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1s ease-in-out 0.2s;
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

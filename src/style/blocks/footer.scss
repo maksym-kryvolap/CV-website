@@ -1,0 +1,46 @@
+@use "../utils/mixins" as mixins;
+
+.footer {
+  z-index: 1;
+  font-size: 12px;
+  background-color: var(--nav-blur);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border-footer);
+
+  &__socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    order: -1;
+
+    @include mixins.screen-md {
+      order: 0;
+    }
+
+    &-icon {
+      display: inline-block;
+      transition: color 0.3s ease;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      @include mixins.screen-lg {
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:hover .footer__socials-icon--svg {
+          color: var(--color-text--role);
+        }
+      }
+
+      &--svg {
+        color: #5c5656;
+        background-color: transparent;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
